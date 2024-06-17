@@ -52,5 +52,23 @@ function reverse($sentence){
 $sentence=readline("Enter a string: ");
 echo(reverse($sentence));
 
-#problem 4
+#problem 5
+<?php
+
+function sumDigits($n) {
+    $sum = 0;
+    $n = abs($n); 
+    $digits = str_split($n);
+    
+    foreach ($digits as $digit) {
+        $sum += $digit;
+    }
+
+    return $sum;
+}
+
+$a=(int)readline('Enter an integer:');
+echo(sumDigits($a));
+
+?>
 
