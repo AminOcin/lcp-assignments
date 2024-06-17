@@ -1,0 +1,27 @@
+#problem 1
+
+<?php
+function find_min_abs($num){
+    $min_num= $num[0];
+    foreach ($num as $num1){
+        if($num1< 0)
+        $num1= $num1*(-1);
+        if ($num1< $min_num)
+            $min_num= $num1;
+    }
+    RETURN $min_num;
+}
+$a=(int)readline('Enter an integer:');
+for($i=0; $i<$a; $i++){
+echo " Enter a list of integers (separated by spaces): ";
+$input = trim(fgets(STDIN));
+$num = array_map('intval', explode(' ', $input));
+echo(find_min_abs($num));
+echo("\n");
+    
+}
+
+?>
+
+#problem 2
+
